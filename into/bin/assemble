@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -eu
+
+echo "Artifact Directory: $INTO_ARTIFACT_DIR"
+
+# ... move artifacts to the right places to be runnable ...
+ls -l "$INTO_ARTIFACT_DIR"
+#
+
+echo "Done."

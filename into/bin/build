@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -eu
+
+# ... use information from profile ...
+echo "$HELLO_MESSAGE"
+#
+
+echo "Source Directory: $INTO_SOURCE_DIR"
+cd "$INTO_SOURCE_DIR"
+
+# ... add build logic here ...
+ls -l
+#
+
+echo "Artifact Directory: $INTO_ARTIFACT_DIR"
+
+# ... move generated artifacts ...
+touch "$INTO_ARTIFACT_DIR/artifact"
+#
+
+echo "Done."
